@@ -120,7 +120,7 @@ p {
 .landing-title {
   font-size: 40px;
   line-height: 1;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.01em;
   color: #444B69;
   margin-bottom: 20px;
 }
@@ -268,6 +268,10 @@ p {
   }
 
   .course-card a {
+    position: absolute;
+    right: 40px;
+    bottom: 25px;
+    width: 135px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -281,9 +285,10 @@ p {
     color: #444B69;
   }
 
-  .course-card a:hover {
+  .course-card:hover a {
     background-color: #fff;
     color:#F3887A;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   }
 
   .course-card p {
@@ -293,12 +298,6 @@ p {
     margin-left: 31px;
   }
 
-  .course-card a {
-    position: absolute;
-    right: 40px;
-    bottom: 25px;
-    width: 135px;
-  }
 
   /* Curriculum */
   .curriculum {
@@ -631,8 +630,12 @@ p {
     background-color: #DA6D5F;
   }
 
-  .header .sign-button:hover {
-    opacity: 0.5;
+  .header .sign-button:first-child:hover {
+    background-color: #EAEAEA;
+  }
+
+  .header .sign-button:last-child:hover {
+    background-color: #E9958A;
   }
 
   /* Landing */
@@ -652,6 +655,7 @@ p {
   .landing .landing-title {
     font-size: 56px;
     line-height: 1.1;
+    letter-spacing: -0.01em;
   }
 
   .landing .landing-text {
@@ -673,7 +677,7 @@ p {
 
   .about .col-md-6 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -682,7 +686,7 @@ p {
   }
 
   .logo-img img {
-    max-width: 330px;
+    min-width: 330px;
   }
 
   .about .col-md-3 {
