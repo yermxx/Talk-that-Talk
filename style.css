@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -104,8 +105,88 @@ p {
 }
 
 /* Header */
+
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header-title,
+.nav-wrapper,
+.button-group {
   display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.open-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #111;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1100;
+}
+
+/* .button-group-sidebar {
+  margin: 0 10px;
+  color: #DA6D5F;
+  text-decoration: none;
+  border: 1px solid #DA6D5F;
+  padding: 5px 10px;
+  border-radius: 5px;
+} */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .sidebar {
+  right: 0;
+}
+
+input[type="checkbox"]:checked ~ .open-btn::before {
+  display: none;
+  content: "\f00d"; /* FontAwesome X icon */
+  font-family: FontAwesome;
+}
+
+.title-group-sidebar img {
+  display: block;
+  width: 50px;
+  height: auto;
 }
 
 /* Landing */
@@ -589,12 +670,29 @@ p {
     align-items: center;
   }
 
-  .header .nav-wrapper {
+  .nav-wrapper {
+    display: flex;
+  }
+
+  .open-btn, .sidebar {
+      display: none;
+  }
+
+  .header-title, .button-group {
+      display: flex;
+      align-items: center;
+  }
+
+  .header-title {
+      flex-grow: 1;
+  }
+
+  .nav-wrapper {
     display: flex;
     flex-direction: row;
   }
 
-  .header .nav-content {
+  .nav-wrapper .nav-content {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.75;

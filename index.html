@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Talk that Talk</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./grid.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -11,38 +12,70 @@
 <body>
   <header id='header' class='header'>
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <a class='title-group' href='#landing'>
-            <img class='logo-text-none' src="./assets/logo-text-none.png" alt="logo-text-none" />
-            <h1 class='header-title'>Talk that Talk</h1>
-          </a>
+        <div class="row">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="open-btn">☰</label>
+            <div class='sidebar' id='sidebar'>
+                <a class='title-group-sidebar' href='#landing'>
+                    <img class='logo-text-none' src="./assets/logo-text-none.png" alt="logo-text-none" />
+                    <h1 class='header-title'>Talk that Talk</h1>
+                </a>
+                <div class='side-wrapper'>
+                    <ul class='side-wrapper'>
+                        <li class='side-content'>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li class='side-content'>
+                            <a href="#program">Program</a>
+                        </li>
+                        <li class='side-content'>
+                            <a href="#curriculum">Curriculum</a>
+                        </li>
+                        <li class='side-content'>
+                            <a href="#review">Review</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-group-sidebar">
+                    <a href="./sign-in.html" class='sign-button'>Sign in</a>
+                    <a href="./main-sign-up.html" class='sign-button'>Sign Up</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="header-title">
+                <a class='title-group' href='#landing'>
+                  <img class='logo-text-none' src="./assets/logo-text-none.png" alt="logo-text-none" />
+                  <h1 class='header-title'>Talk that Talk</h1>
+              </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="nav-wrapper">
+                <ul class='nav-wrapper'>
+                  <li class='nav-content'>
+                      <a href="#about">About Us</a>
+                  </li>
+                  <li class='nav-content'>
+                      <a href="#program">Program</a>
+                  </li>
+                  <li class='nav-content'>
+                      <a href="#curriculum">Curriculum</a>
+                  </li>
+                  <li class='nav-content'>
+                      <a href="#review">Review</a>
+                  </li>
+              </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="button-group">
+                <a href="./sign-in.html" class='sign-button'>Sign in</a>
+                <a href="./main-sign-up.html" class='sign-button'>Sign Up</a>
+              </div>
+            </div>
         </div>
-        <div class="col-12 col-md-5">
-          <ul class='nav-wrapper'>
-            <li class='nav-content'>
-              <a href="#about">About Us</a>
-            </li>
-            <li class='nav-content'>
-              <a href="#program">Program</a>
-            </li>
-            <li class='nav-content'>
-              <a href="#curriculum">Curriculum</a>
-            </li>
-            <li class='nav-content'>
-              <a href="#review">Review</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="button-group">
-            <a href="#" class='sign-button'>Sign in</a>
-            <a href="#" class='sign-button'>Sign Up</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </header>
+</header>
 
   <section id='landing' class='landing'>
     <div class="container">
