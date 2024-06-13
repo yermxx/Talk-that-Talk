@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./grid.min.css">
+  <link rel="stylesheet" href="./reset-css.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./sign-in.css">
+</head>
+<body>
+  <main class='sign-in'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12 col-md-7'>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12 col-md-5'>
+          <div class='sign-in-title'>
+            <div class="title-logo-img">
+              <a href="./index.html"><img src="./assets/logo-text.png" alt="logo-text"></a>
+            </div>
+            <h2 class='section-title'>Welcome Back!</h2>
+          </div>
+          <article class='sign-in'>
+            <div>
+              <form class='sign-in-group' action="method">
+                <div class='sign-email'>
+                  <div class='email-icon'></div>
+                  <input class='user-input' type="email" placeholder='Email Address'>
+                  <div class='clear-button' role='button'>
+                    <img src="./assets/SolarCloseCircleBold 1.svg" alt="clear-email">
+                  </div>
+                </div>
+                <div class='sign-pw'>
+                  <div class='pw-icon'></div>
+                  <input class='user-input' type="password" placeholder='Password'>
+                  <div class='show-pw' role='button'>
+                    <img src="./assets/MdiEyeOffOutline 1.svg" alt="close-eye">
+                  </div>
+                </div>
+                <div class="set-sign-in">
+                  <div class='remember-email'>
+                    <input class="sign-check-input" type="checkbox" value="">
+                    <label class="sign-check-label" for="">Remember me</label>
+                  </div>
+                  <div class='info-user'>
+                    <a href="#">Forgot Password?</a>
+                  </div>
+                </div>
+                <div>
+                  <a href='#'><button class='sign-button' type='submit'>Sign In</button></a>
+                </div>
+                <div class='sign-google'>
+                  <div class="divider">
+                    <hr>
+                    <span>OR</span>
+                    <hr>
+                  </div>
+                  <div class='with-google'>
+                    <a href="#">
+                      <button class='google-button' onclick="window.location.href='google-signup-url'">
+                      <img src="./assets/google-icon.png" alt="google-icon">Continue with Google</button>
+                    </a>
+                  </div>
+                </div>
+                <div class='sign-text'>
+                  <p>Don't have an acount? <a href="./main-sign-up.html">Sign up</a></p>
+                </div>
+              </form>
+            </div>
+          </article>
+          <!-- <footer class='footer'>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <ul class='footer-links'>
+                    <li class='footer-link'>
+                      <a href="#">Terms</a>
+                    </li>
+                    <li class='footer-link'>
+                      <a href="#">Privacy</a>
+                    </li>
+                    <li class='footer-link'>
+                      <a href="#">License</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer> -->
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
