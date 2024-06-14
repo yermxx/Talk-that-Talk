@@ -1,0 +1,50 @@
+
+body {
+  height: 800px;
+  margin: 0;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM sans', sans-serif;
+}
+
+/* .col-md-5 {
+  margin-right: 20px;
+} */
+
+.sign-up-img img {
+  display: block;
+  min-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.email-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.sign-up-google button {
+  margin-bottom: 19px;
+}
+
+.sign-up-email button {
+  margin-bottom: 27px;
+}
+
+
+/* >= 768px (DESKTOP) */
+@media screen and (min-width: 768px) {
+  .col-md-7 {
+    width: 500px;
+  }
+} 
+
+/* Custom Grid System - Fix container width */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
