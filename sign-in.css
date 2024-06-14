@@ -4,18 +4,19 @@
 }
 
 body {
+  height: 800px;
   margin: 0;
-  padding: 70px 40px;
+  padding: 50px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FBF0D8; /* 배경 색상 설정 */
+  background-color: #444B69;
   font-family: 'DM sans', sans-serif;
 }
 
 .container {
-  background-color: white; /* 컨텐츠 배경 색상 */
-  height: 700px;
+  background-color: white;
+  height: 500px;
   min-width: 350px;
   padding: 20px;
   border-radius: 8px;
@@ -245,6 +246,9 @@ body {
 }
 
 .sign-text {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.01em;
   margin-bottom: 70px;
 }
 
@@ -347,7 +351,6 @@ body {
 
   body {
     height: 800px;
-    padding: 100px 40px;
   }
 
   .container {
