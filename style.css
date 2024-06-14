@@ -169,17 +169,18 @@ p {
   border-radius: 5px;
 } */
 
-input[type="checkbox"] {
-  display: none;
+#menuToggle {
+  position: absolute;
+  visibility: hidden;
 }
 
-input[type="checkbox"]:checked ~ .sidebar {
+#menuToggle:checked ~ .sidebar {
   right: 0;
 }
 
-input[type="checkbox"]:checked ~ .open-btn::before {
+#menuToggle:checked ~ .open-btn::before {
   display: none;
-  content: "\f00d"; /* FontAwesome X icon */
+  content: "\f00d";
   font-family: FontAwesome;
 }
 
