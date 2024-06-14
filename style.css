@@ -49,6 +49,11 @@ p {
   color: #5F6874;
 }
 
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
 .section-category {
   display: block;
   font-size: 16px;
