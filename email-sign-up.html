@@ -7,7 +7,6 @@
     <title>Email Sign Up</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./grid.min.css">
-    <link rel="stylesheet" href="./reset-css.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./sign.css">
     <link rel="stylesheet" href="./sign-up-email.css">
@@ -16,28 +15,32 @@
   <main class='email-sign-up'>
     <div class='container'>
       <div class="row">
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-6 left">
+        </div>
+        <div class="col-12 col-md-6 right">
           <div>
             <h2 class='section-title'>Sign Up</h2>
           </div>
           <form action="email-signup-endpoint" method="POST">
-            <div class='user-name'>
-              <label class='sign-up-label' for="name">Your Name</label>
-              <input class='user-input' type="text" id="name" placeholder='Full name' required><br>
-            </div>
-    
-            <div class='user-email'>
-              <label class='sign-up-label' for="email">Your Email</label>
-              <input class='user-input' type="email" id="email" placeholder='Email Address' required><br>
-            </div>
-    
-            <div class='user-pw'>
-              <label class='sign-up-label' for="password">Password</label>
-              <input class='user-input' type="password" id="password" placeholder='Password' required><br>
-              <div class='show-pw' role='button'>
-                <img class='pw-icon' src="./assets/MdiEyeOffOutline 1.svg" alt="close-eye">
+            <div class='user-input-signup'>
+              <div class='user-name'>
+                <label class='sign-up-label' for="name">Your Name</label>
+                <input class='user-input' type="text" id="name" placeholder='Full name' required><br>
               </div>
-              <!-- <span id="passwordError" class="error-message">Password must be at least 8 characters long.</span><br> -->
+      
+              <div class='user-email'>
+                <label class='sign-up-label' for="email">Your Email</label>
+                <input class='user-input' type="email" id="email" placeholder='Email Address' required><br>
+              </div>
+      
+              <div class='user-pw'>
+                <label class='sign-up-label' for="password">Password</label>
+                <input class='user-input' type="password" id="password" placeholder='Password' required><br>
+                <div class='show-pw' role='button'>
+                  <img class='pw-icon' src="./assets/MdiEyeOffOutline 1.svg" alt="close-eye">
+                </div>
+                <!-- <span id="passwordError" class="error-message">Password must be at least 8 characters long.</span><br> -->
+              </div>
             </div>
     
             <div class='agree-terms'>

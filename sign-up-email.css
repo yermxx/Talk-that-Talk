@@ -4,8 +4,7 @@
 }
 
 .user-name,
-.user-email,
-.user-pw {
+.user-email {
   margin-bottom: 13px;
 }
 
@@ -13,6 +12,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .user-pw .show-pw {
@@ -43,6 +43,10 @@
   padding: 0 16px;
 }
 
+.user-input-signup input:focus {
+  border: 2.5px solid #DA6D5F;
+}
+
 .sign-up-label {
   font-size: 16px;
   font-weight: 600;
@@ -65,9 +69,47 @@
   text-align: center;
 }
 
+.email-sign-up .sign-text p {
+  font-size: 16px;
+}
 
 
 /* >= 768px (DESKTOP) */
 @media screen and (min-width: 768px) {
 
+  body {
+    background-color: #FFEDED;
+  }
+
+  .row {
+    background-color: #fff;
+    height: 650px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .col-md-6.right {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+  }
+
+  .email-sign-up .section-title {
+    font-size: 46px;
+  }
+
+  .email-sign-up .sign-button {
+    margin-bottom: 45px;
+  }
+
+  .email-sign-up .sign-text {
+    margin-bottom: 0;
+  }
 } 
+
+/* Custom Grid System - Fix container width */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
