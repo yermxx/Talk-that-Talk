@@ -142,8 +142,8 @@ p {
 
 .nav-wrapper,
 .button-group,
-.col-md-4,
-.col-md-3 {
+.header .col-md-4,
+.header .col-md-3 {
   display: none;
 }
 
