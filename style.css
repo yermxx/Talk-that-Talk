@@ -120,9 +120,30 @@ p {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.header-title,
+.header-top .title-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-top .title-group img:first-child {
+  width: 50px;
+  height: auto;
+  margin: 10px 6px;
+}
+
+.header-top .title-group h1 {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #DA6D5F;
+}
+
 .nav-wrapper,
-.button-group {
+.button-group,
+.col-md-4,
+.col-md-3 {
   display: none;
 }
 
@@ -142,21 +163,32 @@ p {
   padding: 10px 15px;
   text-decoration: none;
   font-size: 18px;
-  color: #818181;
   display: block;
   transition: 0.3s;
+}
+
+.sidebar .side-wrapper a {
+  color: #818181;
+}
+
+.sidebar .button-group-sidebar a {
+  color: #DA6D5F;
 }
 
 .sidebar a:hover {
   color: #f1f1f1;
 }
 
+.sidebar .side-wrapper {
+  margin-bottom: 25px;
+}
+
 .open-btn {
   font-size: 20px;
   cursor: pointer;
   background-color: #fff;
-  color: #111;
-  padding: 10px 15px;
+  color: #444B69;
+  padding: 10px;
   border: none;
   text-decoration: none;
   position: absolute;
@@ -164,15 +196,6 @@ p {
   right: 10px;
   z-index: 1100;
 }
-
-/* .button-group-sidebar {
-  margin: 0 10px;
-  color: #DA6D5F;
-  text-decoration: none;
-  border: 1px solid #DA6D5F;
-  padding: 5px 10px;
-  border-radius: 5px;
-} */
 
 #menuToggle {
   position: absolute;
@@ -187,12 +210,6 @@ p {
   display: none;
   content: "\f00d";
   font-family: FontAwesome;
-}
-
-.title-group-sidebar img {
-  display: block;
-  width: 50px;
-  height: auto;
 }
 
 /* Landing */
@@ -636,6 +653,7 @@ p {
   }
 
   /* Header */
+
   .header {
     position: fixed;
     top: 0;
@@ -645,7 +663,12 @@ p {
     background-color: rgba(255, 255, 255, 0.8);
   }
 
+  .header-top {
+    display:none;
+  }
+
   .header .col-md-4 {
+    display: flex;
     padding-left: 0;
   }
 
@@ -663,7 +686,8 @@ p {
     margin: 6px;
   }
 
-  .title-group .header-title {
+  .title-group h1 {
+    display: inline-block;
     font-size: 24px;
     line-height: 1.1666666667;
     letter-spacing: -0.05em;
@@ -676,21 +700,13 @@ p {
     align-items: center;
   }
 
-  .nav-wrapper {
+  .button-group-sidebar {
     display: flex;
-  }
-
-  .open-btn, .sidebar {
-      display: none;
-  }
-
-  .header-title, .button-group {
-      display: flex;
-      align-items: center;
+    align-items: center;
   }
 
   .header-title {
-      flex-grow: 1;
+    flex-grow: 1;
   }
 
   .nav-wrapper {
