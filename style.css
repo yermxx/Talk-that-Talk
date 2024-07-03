@@ -147,6 +147,8 @@ p {
   display: none;
 }
 
+/* Sidebar */
+
 .sidebar {
   height: 100%;
   width: 250px;
@@ -159,6 +161,46 @@ p {
   z-index: 1000;
 }
 
+.button-group-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 18px 25px;
+}
+
+.button-group-sidebar .sign-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 38px;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: -0.05em;
+  border-radius: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
+.button-group-sidebar .sign-button:first-child {
+  border: 1px solid #DA6D5F;
+  color: #DA6D5F;
+  background-color: #fff;
+  margin-right: 8px;
+}
+
+.button-group-sidebar .sign-button:last-child {
+  color: #fff;
+  background-color: #DA6D5F;
+}
+
+.button-group-sidebar .sign-button:first-child:hover {
+  background-color: #EAEAEA;
+}
+
+.button-group-sidebar .sign-button:last-child:hover {
+  background-color: #E9958A;
+}
+
 .sidebar a {
   padding: 10px 15px;
   text-decoration: none;
@@ -169,10 +211,6 @@ p {
 
 .sidebar .side-wrapper a {
   color: #818181;
-}
-
-.sidebar .button-group-sidebar a {
-  color: #DA6D5F;
 }
 
 .sidebar a:hover {
