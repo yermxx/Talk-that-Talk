@@ -409,7 +409,7 @@ p {
   }
 
   .course-card:hover {
-    background-color: rgba(243,136,122,0.9);
+    background-color: #444B69;
     border: none;
     box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
     transition: background-color 300ms ease-in-out;
@@ -440,9 +440,21 @@ p {
 
   .course-card:hover a {
     background-color: #fff;
-    color:#F3887A;
+    color:#444B69;
     border: none;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  }
+
+  .course-card a:before {
+    height: 0%;
+    width: 2px;
+  }
+  
+  .course-card a:hover {
+    box-shadow: 2px 2px 3px 0 rgba(255,255,255,.5),
+                -2px -2px 3px 0 rgba(116, 125, 136, .5), 
+      inset -2px -2px 3px 0 rgba(255,255,255,.2),
+      inset 2px 2px 3px 0 rgba(0, 0, 0, .4);
   }
 
   .course-card p {
@@ -635,7 +647,7 @@ p {
     padding : 50px 0 15px;
   }
 
-  .footer img {
+  .footer-logo img {
     display: block;
     max-width: 70px;
     height: auto;
@@ -662,10 +674,33 @@ p {
     color: #898C91;
   }
 
-  .footer-links {
+  .footer-links,
+  .footer-icons {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
+  }
+
+  .button-insta,
+  .button-x,
+  .button-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #444B69;
+    border-radius: 50px;
+  }
+
+  .button-insta,
+  .button-x {
+    margin-right: 8px;
+  }
+
+  .footer-icons img {
+    width: 21px;
+    height: 21px;
   }
 
   .footer-link {
@@ -794,8 +829,8 @@ p {
 
   .nav-content:hover * {
     font-weight: 500;
-    color: rgba(243,136,122,0.9);
-    border-bottom: 2px solid rgba(243,136,122,0.9);
+    color: #444B69;
+    border-bottom: 2px solid #444B69;
   }
 
   .header .nav-content:last-child {
