@@ -674,6 +674,11 @@ p {
     color: #898C91;
   }
 
+  .footer-top li:hover,
+  .footer-links:hover {
+    color: #DA6D5F;
+  }
+
   .footer-links,
   .footer-icons {
     display: flex;
@@ -696,6 +701,12 @@ p {
   .button-insta,
   .button-x {
     margin-right: 8px;
+  }
+
+  .button-insta:hover,
+  .button-x:hover,
+  .button-facebook:hover {
+    background-color: #616b96;
   }
 
   .footer-icons img {
@@ -1124,7 +1135,7 @@ p {
     flex-wrap: wrap;
   }
 
-  .footer img {
+  .footer-logo img {
     display: block;
     max-width: 70px;
     height: auto;
@@ -1157,6 +1168,19 @@ p {
 
   .footer-links {
     margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .button-insta,
+  .button-x {
+    margin-right: 12px;
   }
 }
 
